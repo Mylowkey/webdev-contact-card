@@ -1,0 +1,172 @@
+@import url("reset.css");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* Ensure consistent box-sizing for all elements */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+}
+
+
+.image {                   /*  Image container  */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+ .optimus {                /*   Image  */
+    height: 180px;
+    width: 200px;
+    border-radius: 50%;
+ }
+
+.container {
+    background-color:#171A20;
+    border: 5px solid 	#E31937;
+    font: #bfbfbf;
+    margin: 5%; /* Adds spacing around the card */
+    max-width: 800px; /* Limit how wide the card can grow */
+    width: 100%; /* Allow it to shrink on smaller screens */
+    padding: 1rem;   
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-between;
+   
+  
+}
+
+.detailscontainer {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.company-name {
+   text-align: center;
+   padding-top: 1rem;
+   
+   
+  
+}
+
+
+
+
+
+/* corregir media behavior */
+
+ @media (min-width: 500px) {    
+
+    .container {
+        background-color:#171A20;
+        font: #bfbfbf;
+        padding: 1rem; 
+        margin: 50px auto;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        flex-wrap: wrap;
+         /* max-width: 500px; */
+    }
+
+    .detailscontainer {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        padding: 1rem;
+        justify-content: center;
+        align-items: flex-start; /* Align content at the top */
+        text-align: center;
+        
+}
+
+.company-name {
+    align-content: flex-start;
+   text-align: center;
+   margin-left: 1rem; /* Add space to the left of the company name */
+   padding-top: 0rem;
+   
+
+       
+ }
+
+ .contact-details {
+    margin-right: 1rem; /* Add space to the right of the contact details */
+
+
+ }
+
+ }
+
+
+
+ @media (min-width: 752px) {
+
+    .container {
+        background-color:#171A20;
+        font: #bfbfbf;
+        padding: 1rem; 
+        /* margin: 50px auto; */
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 50px auto;
+      
+
+      
+    }
+
+    .detailscontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1;
+        padding: 1rem;
+         justify-content: center;
+        align-items: center; /* Align content at the top */
+        text-align: center;
+
+    }
+
+        .company-name {
+            align-content: flex-start;
+           text-align: center;
+           margin-left: 0rem;
+           padding-top: 1rem;
+           
+         }
+        
+         .contact-details {
+                margin-right: 0rem;
+          
+        
+         }     
+
+
+}
+
