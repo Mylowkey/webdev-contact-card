@@ -1,12 +1,5 @@
 @import url("reset.css");
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box; /* Ensure consistent box-sizing for all elements */
-    margin: 0;
-    padding: 0;
-}
 
 body {
    
@@ -45,16 +38,14 @@ body, html {
 .container {
     background-color:#171A20;
     border: 5px solid 	#E31937;
-    font: #bfbfbf;
-    margin: 5%; /* Adds spacing around the card */
-    max-width: 700px; /* Limit how wide the card can grow */
+    color: #bfbfbf;
+    margin: auto; /* Adds spacing around the card */ 
     min-width: 245px;
-    width: 100%; /* Allow it to shrink on smaller screens */
-    padding: 1rem;   
+     width: 80%;    /*means 80% the size of it parent */
+    padding: 1rem;  
     display: flex;
     flex-direction: column;
     flex: 1;
-    flex-wrap:wrap;
     align-items: center;
     justify-content: space-between;
    
@@ -62,50 +53,42 @@ body, html {
 }
 
 .detailscontainer {
+    /* background-color: #E31937; */
+    /* border: 3px solid purple; */
     padding: 1rem;
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: space-around;
     width: 100%;
+    min-height: 200px;
     
+}
+
+.contact-details {
+    /* background-color: green; */
+
 }
 
 .company-name {
    text-align: center;
-   padding-top: 1rem;
-   
-   
-  
-}
+    /* background-color: yellow; */
+ } 
 
 
 
-
-
-/* corregir media behavior */
-
- @media (min-width: 500px) {    
+ @media only screen and (min-width: 500px) and (max-width: 751px) {    
 
     .container {
-        background-color:#171A20;
-        font: #bfbfbf;
-        padding: 1rem; 
-        margin: 50px auto;
-        display: flex;
-        flex: 1;
-        align-items: center;
-        flex-wrap: wrap;
-         /* max-width: 500px; */
+       width: 50%;
     }
 
     .detailscontainer {
-        display: flex;
         flex-direction: row;
-        flex: 1;
-        padding: 1rem;
         justify-content: center;
         align-items: flex-start; /* Align content at the top */
-        text-align: center;
+        min-height: 50px;
+        
         
 }
 
@@ -114,17 +97,10 @@ body, html {
    text-align: center;
    margin-left: 1rem; /* Add space to the left of the company name */
    padding-top: 0rem;
-   
-
-       
+        
  }
 
- .contact-details {
-    margin-right: 1rem; /* Add space to the right of the contact details */
-
-
- }
-
+ 
  }
 
 
@@ -132,29 +108,22 @@ body, html {
  @media (min-width: 752px) {
 
     .container {
-        background-color:#171A20;
-        font: #bfbfbf;
-        padding: 1rem; 
-        /* margin: 50px auto; */
-        display: flex;
+       
         flex-direction: row;
-        flex: 1;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        margin: 50px auto;
+        margin: auto;
+        max-width: 610px;
       
 
       
     }
 
     .detailscontainer {
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         flex: 1;
-        padding: 1rem;
-         justify-content: center;
+         justify-content: space-around;
         align-items: center; /* Align content at the top */
         text-align: center;
 
@@ -168,11 +137,10 @@ body, html {
            
          }
         
-         .contact-details {
-                margin-right: 0rem;
+      
           
         
-         }     
+  
 
 
 }
