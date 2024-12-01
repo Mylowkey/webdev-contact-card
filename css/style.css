@@ -16,6 +16,7 @@ p {
   }
 
 
+
 body, html {
     width: 100%;
     height: 100%;
@@ -27,16 +28,18 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+   
   
 }
  .optimus {                /*   Image  */
     height: 180px;
     width: 200px;
     border-radius: 50%;
+    border: solid rgb(163, 49, 49)
  }
 
 .container {
-    background-color:#171A20;
+    /* background-color:#171A20; */
     border: 5px solid 	#E31937;
     color: #bfbfbf;
     margin: auto; /* Adds spacing around the card */ 
@@ -45,7 +48,7 @@ body, html {
     padding: 1rem;  
     display: flex;
     flex-direction: column;
-    flex: 1;
+    /* flex: 1; */
     align-items: center;
     justify-content: space-between;
    
@@ -112,6 +115,7 @@ body, html {
         flex-direction: row;
         margin: auto;
         max-width: 610px;
+       
       
 
       
